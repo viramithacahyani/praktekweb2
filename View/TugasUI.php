@@ -1,16 +1,23 @@
 <?php 
+include 'View.php';
 
-require_once 'View.php';
 /**
 * 
 */
 class TugasUI extends View
 {
-	
-	public function tampilTugas()
-	{
-		include_once 'pages/kontentugas2.php';
-		$this->end();
+    public function tampilkanBerita()
+    {
+        include_once 'Model/Berita.php';
+
+        $brt = new Berita();
+
+        $isi_berita = $brt->ambilBerita();
+
+        include_once 'pages/kontentugas2.php';
+
+        $this->end();
+
 	}
 }
 

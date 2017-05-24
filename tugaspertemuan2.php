@@ -3,7 +3,7 @@ include 'View/TugasUI.php';
 
 $tgs = new TugasUI();
 
-$tgs->tampilTugas();
+$tgs->tampilkanBerita();
 
 
  ?>
